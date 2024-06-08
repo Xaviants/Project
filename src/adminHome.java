@@ -43,34 +43,61 @@ public class adminHome extends javax.swing.JFrame {
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, -1, -1));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/index background.png"))); // NOI18N
+        jLabel1.setText("background");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jMenuBar1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Navigation Bar", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 36), new java.awt.Color(255, 51, 51))); // NOI18N
+        jMenuBar1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Navigation Bar", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 36), new java.awt.Color(255, 51, 51))); // NOI18N
 
+        addMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/add new question.png"))); // NOI18N
         addMenu.setText("Add New Question");
         addMenu.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        addMenu.setMargin(new java.awt.Insets(0, 5, 0, 30));
+        addMenu.setMargin(new java.awt.Insets(3, 6, 3, 10));
+        addMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                addMenuMouseClicked(evt);
+            }
+        });
         jMenuBar1.add(addMenu);
 
+        updateMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Update Question.png"))); // NOI18N
         updateMenu.setText("Update Question");
         updateMenu.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        updateMenu.setMargin(new java.awt.Insets(3, 6, 3, 10));
+        updateMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                updateMenuMouseClicked(evt);
+            }
+        });
         jMenuBar1.add(updateMenu);
 
+        allquestionMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/all questions.png"))); // NOI18N
         allquestionMenu.setText("All Question");
         allquestionMenu.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        allquestionMenu.setMargin(new java.awt.Insets(3, 6, 3, 10));
+        allquestionMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                allquestionMenuMouseClicked(evt);
+            }
+        });
         jMenuBar1.add(allquestionMenu);
 
+        deletequestionMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/delete Question.png"))); // NOI18N
         deletequestionMenu.setText("Delete Question");
         deletequestionMenu.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        deletequestionMenu.setMargin(new java.awt.Insets(3, 6, 3, 10));
         jMenuBar1.add(deletequestionMenu);
 
+        resultsMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/all student result.png"))); // NOI18N
         resultsMenu.setText("All Student Results");
         resultsMenu.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        resultsMenu.setMargin(new java.awt.Insets(3, 6, 3, 10));
         jMenuBar1.add(resultsMenu);
 
+        logoutMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Logout.png"))); // NOI18N
         logoutMenu.setText("Logout");
         logoutMenu.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        logoutMenu.setMargin(new java.awt.Insets(3, 6, 3, 10));
         logoutMenu.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 logoutMenuMouseClicked(evt);
@@ -78,8 +105,10 @@ public class adminHome extends javax.swing.JFrame {
         });
         jMenuBar1.add(logoutMenu);
 
+        exitMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logo exit (1).png"))); // NOI18N
         exitMenu.setText("Exit");
         exitMenu.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        exitMenu.setMargin(new java.awt.Insets(3, 6, 3, 10));
         exitMenu.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 exitMenuMouseClicked(evt);
@@ -107,13 +136,46 @@ public class adminHome extends javax.swing.JFrame {
     private void exitMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_exitMenuMouseClicked
         JFrame jf = new JFrame();
         jf.setAlwaysOnTop(true);
-        
+
         int a = JOptionPane.showConfirmDialog(jf, "Do you really want to Exit Application?", "Select", JOptionPane.YES_NO_OPTION);
-        
+
         if(a == 0){
             System.exit(0);
         }
     }//GEN-LAST:event_exitMenuMouseClicked
+
+    private void addMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addMenuMouseClicked
+        if(open == 0){
+            new addNewQuestion().setVisible(true);
+            open = 1;
+        }else{
+            JFrame jf = new JFrame();
+            jf.setAlwaysOnTop(true);
+            JOptionPane.showMessageDialog(jf, "One form is already opened", "Informasi", JOptionPane.INFORMATION_MESSAGE);
+        }
+    }//GEN-LAST:event_addMenuMouseClicked
+
+    private void updateMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_updateMenuMouseClicked
+        if(open == 0){
+            new updateQuestion().setVisible(true);
+            open = 1;
+        }else{
+            JFrame jf = new JFrame();
+            jf.setAlwaysOnTop(true);
+            JOptionPane.showMessageDialog(jf, "One form is already opened", "Information", JOptionPane.INFORMATION_MESSAGE);
+        }
+    }//GEN-LAST:event_updateMenuMouseClicked
+
+    private void allquestionMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_allquestionMenuMouseClicked
+        if(open == 0){
+            new allQuestion().setVisible(true);
+            open = 1;
+        }else{
+            JFrame jf = new JFrame();
+            jf.setAlwaysOnTop(true);
+            JOptionPane.showMessageDialog(jf, "One form is already opened", "Information", JOptionPane.INFORMATION_MESSAGE);
+        }
+    }//GEN-LAST:event_allquestionMenuMouseClicked
 
     /**
      * @param args the command line arguments
