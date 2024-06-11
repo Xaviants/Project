@@ -49,8 +49,8 @@ public class adminHome extends javax.swing.JFrame {
 
         jMenuBar1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Navigation Bar", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 36), new java.awt.Color(255, 51, 51))); // NOI18N
 
-        addMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/add new question.png"))); // NOI18N
-        addMenu.setText("Add New Question");
+        addMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/add new question_1.png"))); // NOI18N
+        addMenu.setContentAreaFilled(false);
         addMenu.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         addMenu.setMargin(new java.awt.Insets(3, 6, 3, 10));
         addMenu.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -86,6 +86,11 @@ public class adminHome extends javax.swing.JFrame {
         deletequestionMenu.setText("Delete Question");
         deletequestionMenu.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         deletequestionMenu.setMargin(new java.awt.Insets(3, 6, 3, 10));
+        deletequestionMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                deletequestionMenuMouseClicked(evt);
+            }
+        });
         jMenuBar1.add(deletequestionMenu);
 
         resultsMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/all student result.png"))); // NOI18N
@@ -162,7 +167,7 @@ public class adminHome extends javax.swing.JFrame {
         }else{
             JFrame jf = new JFrame();
             jf.setAlwaysOnTop(true);
-            JOptionPane.showMessageDialog(jf, "One form is already opened", "Information", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(jf, "One form is already opened", "Informasi", JOptionPane.INFORMATION_MESSAGE);
         }
     }//GEN-LAST:event_updateMenuMouseClicked
 
@@ -173,9 +178,20 @@ public class adminHome extends javax.swing.JFrame {
         }else{
             JFrame jf = new JFrame();
             jf.setAlwaysOnTop(true);
-            JOptionPane.showMessageDialog(jf, "One form is already opened", "Information", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(jf, "One form is already opened", "Informasi", JOptionPane.INFORMATION_MESSAGE);
         }
     }//GEN-LAST:event_allquestionMenuMouseClicked
+
+    private void deletequestionMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_deletequestionMenuMouseClicked
+        if(open == 0){
+            new deleteQuestion().setVisible(true);
+            open = 1;
+        }else{
+            JFrame jf = new JFrame();
+            jf.setAlwaysOnTop(true);
+            JOptionPane.showMessageDialog(jf, "One form is already opened", "Informasi", JOptionPane.INFORMATION_MESSAGE);
+        }
+    }//GEN-LAST:event_deletequestionMenuMouseClicked
 
     /**
      * @param args the command line arguments

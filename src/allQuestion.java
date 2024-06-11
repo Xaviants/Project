@@ -7,9 +7,7 @@ import Project.ConnectionProvider;
 import java.sql.Connection;
 import java.sql.Statement;
 import java.sql.ResultSet;
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import java.sql.PreparedStatement;
 import net.proteanit.sql.DbUtils;
 
 /**

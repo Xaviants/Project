@@ -41,6 +41,11 @@ public class index extends javax.swing.JFrame {
         studentBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tombol student.png"))); // NOI18N
         studentBtn.setBorder(null);
         studentBtn.setContentAreaFilled(false);
+        studentBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                studentBtnActionPerformed(evt);
+            }
+        });
         getContentPane().add(studentBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 270, 310, 100));
 
         adminBtn.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -80,6 +85,11 @@ public class index extends javax.swing.JFrame {
         setVisible(false);
         new loginAdmin().setVisible(true); 
     }//GEN-LAST:event_adminBtnActionPerformed
+
+    private void studentBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_studentBtnActionPerformed
+        setVisible(false);
+        new studentDetails().setVisible(true);
+    }//GEN-LAST:event_studentBtnActionPerformed
    
     /**
      * @param args the command line arguments
