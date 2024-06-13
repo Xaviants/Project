@@ -28,7 +28,7 @@ public class studentDetails extends javax.swing.JFrame {
         Date date = new Date();
         lblDateDisplay.setText(dateFormat.format(date));
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -52,7 +52,6 @@ public class studentDetails extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         txtNoPendaftaran = new javax.swing.JTextField();
@@ -62,13 +61,9 @@ public class studentDetails extends javax.swing.JFrame {
         cmbKelamin = new javax.swing.JComboBox<>();
         txtEmail = new javax.swing.JTextField();
         txtUnivName = new javax.swing.JTextField();
-        txtTempatLahir = new javax.swing.JTextField();
         cmbFakultas = new javax.swing.JComboBox<>();
         jLabel13 = new javax.swing.JLabel();
         txtAlamat = new javax.swing.JTextField();
-        txtTanggalLahir = new javax.swing.JTextField();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
         saveAndNextBtn = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
@@ -92,7 +87,7 @@ public class studentDetails extends javax.swing.JFrame {
         getContentPane().add(lblDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 40, -1, -1));
 
         lblDateDisplay.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        lblDateDisplay.setText("jLabel4");
+        lblDateDisplay.setText(".");
         getContentPane().add(lblDateDisplay, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 40, -1, -1));
 
         backBtn.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
@@ -142,10 +137,6 @@ public class studentDetails extends javax.swing.JFrame {
         jLabel9.setText("Universitas");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 530, -1, -1));
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        jLabel10.setText("Tempat/Tanggal Lahir");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 630, -1, -1));
-
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         jLabel11.setText("Fakultas");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, -1, -1));
@@ -167,7 +158,7 @@ public class studentDetails extends javax.swing.JFrame {
         getContentPane().add(txtNomorTelepon, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 380, 320, -1));
 
         cmbKelamin.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        cmbKelamin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pria", "Wanita" }));
+        cmbKelamin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Jenis Kelamin", "Pria", "Wanita" }));
         getContentPane().add(cmbKelamin, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 280, 320, -1));
 
         txtEmail.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
@@ -186,11 +177,8 @@ public class studentDetails extends javax.swing.JFrame {
         });
         getContentPane().add(txtUnivName, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 530, 320, -1));
 
-        txtTempatLahir.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        getContentPane().add(txtTempatLahir, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 630, 250, -1));
-
         cmbFakultas.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        cmbFakultas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Kedokteran", "Kedokteran Gigi", "Teknologi Informasi", "Hukum", "Ekonomi dan Bisnis", "Psikologi" }));
+        cmbFakultas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Fakultas", "Kedokteran", "Kedokteran Gigi", "Teknologi Informasi", "Hukum", "Ekonomi dan Bisnis", "Psikologi" }));
         getContentPane().add(cmbFakultas, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 430, 320, -1));
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
@@ -200,17 +188,6 @@ public class studentDetails extends javax.swing.JFrame {
         txtAlamat.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         getContentPane().add(txtAlamat, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 580, 580, -1));
 
-        txtTanggalLahir.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
-        getContentPane().add(txtTanggalLahir, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 630, 230, -1));
-
-        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel14.setText("Tanggal Lahir");
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 670, -1, -1));
-
-        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel15.setText("Tempat Lahir");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 670, -1, -1));
-
         saveAndNextBtn.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         saveAndNextBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/save.png"))); // NOI18N
         saveAndNextBtn.setText("Save & Next");
@@ -219,7 +196,7 @@ public class studentDetails extends javax.swing.JFrame {
                 saveAndNextBtnActionPerformed(evt);
             }
         });
-        getContentPane().add(saveAndNextBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 670, -1, -1));
+        getContentPane().add(saveAndNextBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 640, 320, -1));
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
@@ -229,13 +206,14 @@ public class studentDetails extends javax.swing.JFrame {
         jTextArea1.setFocusable(false);
         jScrollPane1.setViewportView(jTextArea1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 130, 580, 380));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 130, 580, 230));
 
         cmbProdi.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        cmbProdi.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Prodi", "Kedokteran", "Profesi Dokter", "Pendidikan Dokter Gigi", "Profesi Dokter Gigi", "Psikologi", "Manajemen", "Akuntansi", "Ilmu Hukum", "Teknik Informatika", "Perpustakaan dan Sains Informasi" }));
         getContentPane().add(cmbProdi, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 480, 320, -1));
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pages background student.jpg"))); // NOI18N
-        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -50, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -278,13 +256,11 @@ public class studentDetails extends javax.swing.JFrame {
         String prodi = cmbProdi.getSelectedItem().toString();
         String namaUniv = txtUnivName.getText();
         String alamat = txtAlamat.getText();
-        String tempatLahir = txtTempatLahir.getText();
-        String tanggalLahir = txtTanggalLahir.getText();
         String nilai = "0";
         
         try{
             Connection cont = ConnectionProvider.getConnected();
-            PreparedStatement ps = cont.prepareStatement("INSERT INTO studentdata VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+            PreparedStatement ps = cont.prepareStatement("INSERT INTO studentdata VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
             ps.setString(1, noDaftar);
             ps.setString(2, namaMahasiswa);
             ps.setString(3, npm);
@@ -295,12 +271,11 @@ public class studentDetails extends javax.swing.JFrame {
             ps.setString(8, prodi);
             ps.setString(9, namaUniv);
             ps.setString(10, alamat);
-            ps.setString(11, tempatLahir);
-            ps.setString(12, tanggalLahir);
-            ps.setString(13, nilai);
+            ps.setString(11, nilai);
             ps.executeUpdate();
             
-            JOptionPane.showMessageDialog(this, "Successfully Updated", "Informasi", JOptionPane.INFORMATION_MESSAGE);
+            setVisible(false);
+            new InstructionStudent(noDaftar).setVisible(true);
         }catch(Exception e){
              JOptionPane.showMessageDialog(null, e);
         }
@@ -348,12 +323,9 @@ public class studentDetails extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cmbKelamin;
     private javax.swing.JComboBox<String> cmbProdi;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -375,8 +347,6 @@ public class studentDetails extends javax.swing.JFrame {
     private javax.swing.JTextField txtNama;
     private javax.swing.JTextField txtNoPendaftaran;
     private javax.swing.JTextField txtNomorTelepon;
-    private javax.swing.JTextField txtTanggalLahir;
-    private javax.swing.JTextField txtTempatLahir;
     private javax.swing.JTextField txtUnivName;
     // End of variables declaration//GEN-END:variables
 }

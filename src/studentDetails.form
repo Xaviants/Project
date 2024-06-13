@@ -70,7 +70,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="20" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="jLabel4"/>
+        <Property name="text" type="java.lang.String" value="."/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -210,19 +210,6 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel10">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="20" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Tempat/Tanggal Lahir"/>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="40" y="630" width="-1" height="-1"/>
-        </Constraint>
-      </Constraints>
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabel11">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -303,9 +290,10 @@
           <Font name="Tahoma" size="20" style="1"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="Pria"/>
-            <StringItem index="1" value="Wanita"/>
+          <StringArray count="3">
+            <StringItem index="0" value="Pilih Jenis Kelamin"/>
+            <StringItem index="1" value="Pria"/>
+            <StringItem index="2" value="Wanita"/>
           </StringArray>
         </Property>
       </Properties>
@@ -350,31 +338,20 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtTempatLahir">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="20" style="1"/>
-        </Property>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="320" y="630" width="250" height="-1"/>
-        </Constraint>
-      </Constraints>
-    </Component>
     <Component class="javax.swing.JComboBox" name="cmbFakultas">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="20" style="1"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="6">
-            <StringItem index="0" value="Kedokteran"/>
-            <StringItem index="1" value="Kedokteran Gigi"/>
-            <StringItem index="2" value="Teknologi Informasi"/>
-            <StringItem index="3" value="Hukum"/>
-            <StringItem index="4" value="Ekonomi dan Bisnis"/>
-            <StringItem index="5" value="Psikologi"/>
+          <StringArray count="7">
+            <StringItem index="0" value="Pilih Fakultas"/>
+            <StringItem index="1" value="Kedokteran"/>
+            <StringItem index="2" value="Kedokteran Gigi"/>
+            <StringItem index="3" value="Teknologi Informasi"/>
+            <StringItem index="4" value="Hukum"/>
+            <StringItem index="5" value="Ekonomi dan Bisnis"/>
+            <StringItem index="6" value="Psikologi"/>
           </StringArray>
         </Property>
       </Properties>
@@ -412,44 +389,6 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtTanggalLahir">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="20" style="1"/>
-        </Property>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="590" y="630" width="230" height="-1"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel14">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Tanggal Lahir"/>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="590" y="670" width="-1" height="-1"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel15">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Tempat Lahir"/>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="320" y="670" width="-1" height="-1"/>
-        </Constraint>
-      </Constraints>
-    </Component>
     <Component class="javax.swing.JButton" name="saveAndNextBtn">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -465,7 +404,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="990" y="670" width="-1" height="-1"/>
+          <AbsoluteConstraints x="520" y="640" width="320" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -475,7 +414,7 @@
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="680" y="130" width="580" height="380"/>
+          <AbsoluteConstraints x="680" y="130" width="580" height="230"/>
         </Constraint>
       </Constraints>
 
@@ -501,7 +440,19 @@
           <Font name="Tahoma" size="20" style="1"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="0"/>
+          <StringArray count="11">
+            <StringItem index="0" value="Pilih Prodi"/>
+            <StringItem index="1" value="Kedokteran"/>
+            <StringItem index="2" value="Profesi Dokter"/>
+            <StringItem index="3" value="Pendidikan Dokter Gigi"/>
+            <StringItem index="4" value="Profesi Dokter Gigi"/>
+            <StringItem index="5" value="Psikologi"/>
+            <StringItem index="6" value="Manajemen"/>
+            <StringItem index="7" value="Akuntansi"/>
+            <StringItem index="8" value="Ilmu Hukum"/>
+            <StringItem index="9" value="Teknik Informatika"/>
+            <StringItem index="10" value="Perpustakaan dan Sains Informasi"/>
+          </StringArray>
         </Property>
       </Properties>
       <AuxValues>
@@ -521,7 +472,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="-1" height="-1"/>
+          <AbsoluteConstraints x="0" y="-50" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
