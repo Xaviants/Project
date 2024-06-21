@@ -11,7 +11,6 @@ import java.text.SimpleDateFormat;
 import java.sql.Connection;
 import java.sql.Statement;
 import java.sql.ResultSet;
-import javax.swing.JOptionPane;
 
 /**
  * Kelas ini merepresentasikan GUI untuk ujian kuis mahasiswa.
@@ -44,7 +43,7 @@ public class QuizExamStudent extends javax.swing.JFrame implements AnswerCheckab
             studentAnswer = opt4.getText();
         }
         
-        if(studentAnswer.equals(answer)){
+        if(studentAnswer.equalsIgnoreCase(answer)){
             marks = marks + 10;
         }
         
