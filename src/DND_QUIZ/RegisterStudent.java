@@ -109,7 +109,7 @@ class Student extends Person {
  * 
  * @author DAFFA
  */
-public class RegisterStudent extends javax.swing.JFrame {
+public class RegisterStudent extends javax.swing.JFrame implements ExceptionError {
 
     /**
      * Membuat form baru dari RegisterStudent.
@@ -269,8 +269,8 @@ public class RegisterStudent extends javax.swing.JFrame {
 
                                             reset();
                                         }
-                                    }catch(SQLException ex){
-                                        JOptionPane.showMessageDialog(this, ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+                                    }catch(Exception e){
+                                        ExceptionError.errorMessage(e);
                                     }
                                 }else{
                                     JOptionPane.showMessageDialog(this, "Password tidak sesuai", "WARNING", JOptionPane.WARNING_MESSAGE);

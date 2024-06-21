@@ -214,7 +214,7 @@ public class AdminHome extends BaseFrame {
             new AddNewQuestion().setVisible(true);
             open = 1;
         }else{
-            showMessage("Ada tab yang masih terbuka", "WARNING", JOptionPane.WARNING_MESSAGE);
+            super.showMessage("Ada tab yang masih terbuka", "WARNING", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_addMenuMouseClicked
     
@@ -230,7 +230,7 @@ public class AdminHome extends BaseFrame {
             new UpdateQuestion().setVisible(true);
             open = 1;
         }else{
-            showMessage("Ada tab yang masih terbuka", "WARNING", JOptionPane.WARNING_MESSAGE);
+            super.showMessage("Ada tab yang masih terbuka", "WARNING", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_updateMenuMouseClicked
     
@@ -246,7 +246,7 @@ public class AdminHome extends BaseFrame {
             new AllQuestion().setVisible(true);
             open = 1;
         }else{
-            showMessage("Ada tab yang masih terbuka", "WARNING", JOptionPane.WARNING_MESSAGE);
+            super.showMessage("Ada tab yang masih terbuka", "WARNING", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_allquestionMenuMouseClicked
     
@@ -262,7 +262,7 @@ public class AdminHome extends BaseFrame {
             new DeleteQuestion().setVisible(true);
             open = 1;
         }else{
-            showMessage("Ada tab yang masih terbuka", "WARNING", JOptionPane.WARNING_MESSAGE);
+            super.showMessage("Ada tab yang masih terbuka", "WARNING", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_deletequestionMenuMouseClicked
     
@@ -278,7 +278,7 @@ public class AdminHome extends BaseFrame {
             new AllStudentResult().setVisible(true);
             open = 1;
         }else{
-            showMessage("Ada tab yang masih terbuka", "WARNING", JOptionPane.WARNING_MESSAGE);
+            super.showMessage("Ada tab yang masih terbuka", "WARNING", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_resultsMenuMouseClicked
 

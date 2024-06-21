@@ -21,7 +21,7 @@ import java.sql.PreparedStatement;
  * 
  * @author DAFFA
  */
-public class LoginStudent extends javax.swing.JFrame {
+public class LoginStudent extends javax.swing.JFrame implements ExceptionError {
 
     /**
      * Membuat form baru dari LoginStudent.
@@ -171,8 +171,8 @@ public class LoginStudent extends javax.swing.JFrame {
                         }else{
                             JOptionPane.showMessageDialog(this, "Username tidak sesuai", "Informasi", JOptionPane.ERROR_MESSAGE);
                         }
-                    }catch(SQLException ex){
-                        JOptionPane.showMessageDialog(this, ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+                    }catch(Exception e){
+                        ExceptionError.errorMessage(e);
                     }
                 }
             }

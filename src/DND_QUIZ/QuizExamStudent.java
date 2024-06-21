@@ -21,7 +21,7 @@ import javax.swing.JOptionPane;
  * 
  * @author DINA
  */
-public class QuizExamStudent extends javax.swing.JFrame implements AnswerCheckable, Submittable, Question {
+public class QuizExamStudent extends javax.swing.JFrame implements AnswerCheckable, Submittable, Question, ExceptionError {
     
     private String questionID = "1";
     private String answer;
@@ -85,7 +85,7 @@ public class QuizExamStudent extends javax.swing.JFrame implements AnswerCheckab
                 answer = rst.getString(7);
             }
         }catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
+            ExceptionError.errorMessage(e);
         }
     }
     
@@ -106,7 +106,7 @@ public class QuizExamStudent extends javax.swing.JFrame implements AnswerCheckab
             setVisible(false);
             new SuccessfullySubmitted(grade).setVisible(true);
         }catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
+            ExceptionError.errorMessage(e);
         }
     }
     
@@ -155,7 +155,7 @@ public class QuizExamStudent extends javax.swing.JFrame implements AnswerCheckab
                 answer = rst.getString(7);
             }
         }catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
+            ExceptionError.errorMessage(e);
         }
     }
 
