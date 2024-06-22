@@ -1,6 +1,6 @@
 File ini menjelaskan cara menjalankan program kami yaitu DND-QUIZ.
 
-Anggota Kelompok:
+Anggota Kelompok DND-QUIZ:
 1. Daffa Dians Ramadhan (1402023016)
 2. Dina Amaliah (1402023020)
 3. Nayla Athifa (1402023048)
