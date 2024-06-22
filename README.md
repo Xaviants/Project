@@ -1,9 +1,9 @@
 File ini menjelaskan cara menjalankan program kami yaitu DND-QUIZ.
 
 Anggota Kelompok DND-QUIZ:
-1. Daffa Dians Ramadhan (1402023016)
-2. Dina Amaliah (1402023020)
-3. Nayla Athifa (1402023048)
+1. Daffa Dians Ramadhan, B, (1402023016)
+2. Dina Amaliah, B, (1402023020)
+3. Nayla Athifa, B, (1402023048)
 
 Sebelum menjalankan Program DND-QUIZ, anda harus:
 1. Download dan import file sql bernama 'qems' yang ada pada folder projek ke dalam phpmyadmin yang bisa diakses dengan mendownload XAMPP.
