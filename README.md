@@ -1,3 +1,9 @@
+DND-QUIZ
+Anggota Kelompok:
+1. Daffa Dians Ramadhan (1402023016)
+2. Dina Amaliah (1402023020)
+3. Nayla Athifa (1402023048)
+
 Sebelum menjalankan Program DND-QUIZ, anda harus:
 1. Download dan import file sql bernama 'qems' yang ada pada folder projek ke dalam phpmyadmin yang bisa diakses dengan mendownload XAMPP.
 2. Download dan add file jar pada libraries netbeans, yaitu 'mysql-connector-java-8.0.22' dan 'rs2xml'.
