@@ -1,6 +1,7 @@
-File ini menjelaskan cara menjalankan program kami yaitu DND-QUIZ.
+File ini menjelaskan kelengkapan berkas proyek akhir kami yang berjudul Aplikasi Quiz Management. Berkas terdiri dari:
+1. Link Youtube tempat unggah video demo proyek akhir: https://youtu.be/vWF0TmUQ0YU?si=FK6ovNZ-q9vrwaaE
 
-Anggota Kelompok DND-QUIZ:
+Kelompok DND:
 1. Daffa Dians Ramadhan, B, (1402023016)
 2. Dina Amaliah, B, (1402023020)
 3. Nayla Athifa, B, (1402023048)
